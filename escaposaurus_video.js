@@ -381,6 +381,14 @@ function doThePasswordMatch(userTry, foldername){
 	}
 }
 
+function checkIfEnter(e, userTry, foldername){
+	if(e.keyCode === 13){
+	    e.preventDefault(); // Ensure it is only this code that runs
+
+	    checkPassword(userTry, foldername) ;
+	}
+}
+
 function checkPassword(userTry, foldername){
 	TinyStato.logThis(14, "triedpassword", userTry, sequenceNumber) ;
 
@@ -402,6 +410,7 @@ function openPasswordPrompt(foldername){
 	if(sequenceFolder[sequenceNumber] == foldername){
 		document.getElementById("passwordInput").value = "" ;
 
+
 		var x = document.getElementById("folderInput") ;
 		x.value = foldername ;
 
@@ -410,6 +419,8 @@ function openPasswordPrompt(foldername){
 
 		var p = document.getElementById("passPrompt-window") ;
 		p.classList.remove("hidden") ;
+		document.getElementById("passwordInput").focus() ;
+
 	}else{
 		if(folderState[foldername] == 1){
 			var d = document.getElementById("folderN") ;

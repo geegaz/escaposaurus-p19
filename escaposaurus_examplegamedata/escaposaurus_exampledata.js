@@ -64,8 +64,8 @@
 		var gameMissionCall = "Voici la vidéo qu'Albert a envoyé à votre bureau d'informaticien spécialisé en récupération de données" ;
 		var gameMissionAccept = "&raquo;&raquo; Accepter la mission et charger la clé USB dans le serveur virtuel (JOUER) &laquo;&laquo;" ;
 
-		var gameCredit = "Un jeu conçu et réalisé par : <br/>NOM PRENOM<br/>NOM PRENOM<br/>NOM PRENOM<br/>NOM PRENOM<br/>NOM PRENOM" ;
-		var gameThanks = "Remerciements : <br/>NOM PRENOM<br/>NOM PRENOM<br/>NOM PRENOM<br/>NOM PRENOM<br/>NOM PRENOM" ;
+		var gameCredit = "Un jeu conçu et réalisé par : <br/>Stéphanie Mader" ;
+		var gameThanks = "Remerciements : <br/> ;)" ;
 
 		var OSName = "Special InformaticienOS 3.11- diskloaded: Escaposaurus_Example" ;
 		var explorerName = "USB DISK EXPLORER" ;
