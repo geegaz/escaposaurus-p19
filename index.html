@@ -30,15 +30,15 @@
 <!-- HERE TO change the folder to your game -->
 <!-- //////////////////////////////////// -->
 	<!-- favicon generated using https://favicon.io/ -->
-	<link rel="icon" type="image/png" sizes="32x32" href="escaposaurus_examplegamedata/img/favicon/favicon-32x32.png">
-	<link rel="icon" type="image/png" sizes="16x16" href="escaposaurus_examplegamedata/img/favicon/favicon-16x16.png">
-	<link rel="icon" type="image/png" href="escaposaurus_examplegamedata/img/favicon/favicon.ico">
+	<link rel="icon" type="image/png" sizes="32x32" href="escaposaurus_bastille/img/favicon/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="escaposaurus_bastille/img/favicon/favicon-16x16.png">
+	<link rel="icon" type="image/png" href="escaposaurus_bastille/img/favicon/favicon.ico">
 
 	<!-- our stylesheet -->
-	<link rel="stylesheet" href="escaposaurus_examplegamedata/escaposaurus_style.css">
+	<link rel="stylesheet" href="escaposaurus_bastille/escaposaurus_style.css">
 
 	<!-- everything that run the game -->
-	<script src="escaposaurus_examplegamedata/escaposaurus_exampledata.js"></script>
+	<script src="escaposaurus_bastille/escaposaurus_exampledata.js"></script>
 <!-- /HERE TO INCLUDE YOUR GAME DATA -->
 <!-- //////////////////////////////////// -->
 
@@ -59,19 +59,17 @@
 <body>
 	<div class="hidden">
 			<script type="text/javascript">
-				<!--//--><![CDATA[//><!--
-					function preload(files, list) {
-						for (i = 0; i < files.length; i++) {
-							var vidPreload = new Preload();
-							vidPreload.src = files[i];
-							if(typeof list !== "undefined"){
-								list[i] = img;
-							}
+				function preload(files, list) {
+					for (i = 0; i < files.length; i++) {
+						var vidPreload = new Preload();
+						vidPreload.src = files[i];
+						if(typeof list !== "undefined"){
+							list[i] = img;
 						}
 					}
+				}
 
-					preload([]);
-				//--><!]]>
+				preload([]);
 			</script>
 		</div>
 	<div id="main-container">
