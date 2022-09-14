@@ -38,79 +38,49 @@ var udiskData =
 	"root":{
 		"folders":[
 			{
-				"foldername":"gaming",
+				"foldername":"Cuisine_Recettes",
+				"password":"leroy",
+				"sequence":0,
 				"files":[
-					"20190509_316504.mp4"
+					"IMG_52164809.png", 
+					"Recette_creme_anglaise.png", 
+					"Recette_ile_flottante.png"
 				]
 			},
 			{
-				"foldername":"vieillescartespostales",
-				"files":[
-					"carte1.jpg", 
-					"carte2.jpg", 
-					"carte3.jpg", 
-					"carte4.jpg"
-				]
-			},
-			{
-				"foldername":"dcim",
-				"password":"forclaz",
+				"foldername":"Documents",
+				"password":"15",
 				"sequence":1,
-				"files":[
-					"20180807_103031.jpg", 
-					"20180807_114356.jpg", 
-					"20180807_123538.mp4"
-				]
-			},
-			{
-				"foldername":"itineraire2018",
 				"folders":[
 					{
-						"foldername":"perso",
-						"password":"nata",
-						"sequence":0, 
+						"foldername":"Business",
+						"password":"chips",
+						"sequence":2, 
 						"files":[
-							"FXHT4438a.jpg",
-							"Screenshot20180701_Wanderplaner(1).jpg"
+							"Testament_original.png",
 						]
 					}
 				]
 			},
-			{
-				"foldername":"itineraire2019", 
-				"password":"trient",
-				"sequence":2,
-				"files":[
-					"fortnitescreen.png", 
-					"swisstopo-screen.png"
-				],
-				"folders":[
-					{
-						"foldername":"GPS",
-						"password":"wandfluehorn",
-						"sequence":3, 
-						"files":[
-							"idgps.png"
-						]
-					}
-				]
-			}
 		],
 		"files":[
-			"scan_memo.png"
+			"Caisse_bastille.png",
+			"Journal_du_22_janvier.png",
+			"Mamie_devant_bastille.png",
+			"Testament_copie.png"
 		]
 	}
 };
 
-var gameTitle = "Escaposaurus Scenario Exemple" ;
+var gameTitle = "Affaire Bastille" ;
 var gameDescriptionHome = "Ceci est une courte aventure d'exemple pour montrer ce que le framework Escaposaurus permet facilement de réaliser.<br/>Le code source est téléchargeable sur <a href='https://github.com/RedNaK/escaposaurus' target='_blank'>GitHub</a>" ;
-var gameMissionCall = "Voici la vidéo qu'Albert a envoyé à votre bureau d'informaticien spécialisé en récupération de données" ;
-var gameMissionAccept = "&raquo;&raquo; Accepter la mission et charger la clé USB dans le serveur virtuel (JOUER) &laquo;&laquo;" ;
+var gameMissionCall = "Voici la vidéo que la commissaire Renée Froncet a envoyé à votre bureau d'informaticien spécialisé en décryptage de données" ;
+var gameMissionAccept = "&raquo;&raquo; Accepter la mission et charger le disque dur dans le serveur virtuel (JOUER) &laquo;&laquo;" ;
 
-var gameCredit = "Un jeu conçu et réalisé par : <br/>Stéphanie Mader" ;
+var gameCredit = "Un jeu conçu et réalisé par : <br/>Solenn, Noé, Tanguy, Axelle, William, Louise" ;
 var gameThanks = "Remerciements : <br/> ;)" ;
 
-var OSName = "Special InformaticienOS 3.11- diskloaded: Escaposaurus_Example" ;
+var OSName = "Special InformaticienOS 3.11- diskloaded: Affaires_Bastille" ;
 var explorerName = "USB DISK EXPLORER" ;
 var callerAppName = "CALL CONTACT" ;
 
@@ -155,7 +125,7 @@ helperContacts[0] = {"vid" : "Albert", "vod_folder" : "", "username" : "Albert (
 
 
 /*ce qui apparait quand on trouve le dernier élément du disque dur*/
-finalStepAdded = "ID du GPS transmise aux secours." ;
+finalStepAdded = "Informations sur le testament original transmises." ;
 
 /*the last call, it can be the person we find in the end or anyone else we call to end the quest, allows the game to know it is the final contact that is called and to proceed with the ending*/
 var missingContact = {"vid" : "missing", "vod_folder" : "","username" : "Nathalie",  "canal" : "video", "avatar" : "nata_avatar.jpg"} ;
