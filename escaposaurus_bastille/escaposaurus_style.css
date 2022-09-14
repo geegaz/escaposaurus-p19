@@ -8,18 +8,6 @@
 ////////////////////////////////////////////////////////////
 -->*/
 
-/*by default there is no margin or padding anywhere*/
-*{ margin: 0px; padding: 0px; }
-a{color:#1022CC;}
-body{font-family: Arial;}
-
-/*on veut la lightbox devant*/
-.lightbox-container {
-	z-index: 302;
-}
-
-video{max-width: 960px;}
-
 @font-face {
     font-family: Roboto;
     src: url('img/fonts/Roboto/Roboto-Light.ttf') format('truetype');
@@ -28,6 +16,24 @@ video{max-width: 960px;}
     font-family: Odibee;
     src: url('img/fonts/Odibee_Sans/OdibeeSans-Regular.ttf') format('truetype');
 }
+
+@font-face {
+	font-family: W95fa;
+	src: url('img/fonts/w95fa/W95FA.otf') format('opentype');
+}
+
+/*by default there is no margin or padding anywhere*/
+*{ margin: 0px; padding: 0px; }
+a{color:#1022CC;}
+body{font-family: W95fa;}
+
+/*on veut la lightbox devant*/
+.lightbox-container {
+	z-index: 302;
+}
+
+video{max-width: 960px;}
+
 
 /*size of the countainer defined to fit most used screen resolution*/
 /*main div container*/
@@ -76,7 +82,7 @@ video{max-width: 960px;}
 	font-weight: bold;
 	padding:5px;
 	background-color:#1022CC;
-	font-family: Roboto;
+	font-family: W95fa;
 }
 
 #main-game-div{
@@ -93,8 +99,9 @@ video{max-width: 960px;}
 }
 
 .app-title-span{
-	font-family: Odibee ;
-	font-size:30px;
+	font-family: W95fa ;
+	font-size:28px;
+	font-weight: bold;
 }
 
 /*call app*/
@@ -247,7 +254,7 @@ video{max-width: 960px;}
 	border: none;
 	padding:3px;
 	margin:3px;
-	font-family: Roboto ;
+	font-family: W95fa ;
 	font-size:14px;
 	font-weight:bold;
 }
@@ -298,7 +305,7 @@ video{max-width: 960px;}
 	border:none;
 	margin-right:5px;
 	padding:3px;
-	font-family: Roboto ;
+	font-family: W95fa ;
 	font-size:16px;
 	font-weight:bold;
 }
@@ -337,7 +344,7 @@ video{max-width: 960px;}
 /*class that deals with the udrive content, tread carefully, it is working ok but very capricious*/
 ul{
     margin: 0px 0px 0px 20px; 
-    list-style: none; line-height: 2em; font-family: Arial;
+    list-style: none; line-height: 2em; font-family: W95fa;
 }
 
 .arbo, .folder{
