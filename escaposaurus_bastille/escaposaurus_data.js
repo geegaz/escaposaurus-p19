@@ -36,10 +36,16 @@ var udiskJSONPath = "/helper_scripts/accessJSON_udisk.php" ;*/
 var udiskData =
 {
 	"root":{
+		"files":[
+			"Caisse_bastille.png",
+			"Journal_du_22_janvier.png",
+			"Mamie_devant_bastille.png",
+			"Testament_copie.png"
+		],
 		"folders":[
 			{
 				"foldername":"Cuisine_Recettes",
-				"password":"leroy",
+				"password":"roy",
 				"sequence":0,
 				"files":[
 					"IMG_52164809.png", 
@@ -61,13 +67,7 @@ var udiskData =
 						]
 					}
 				]
-			},
-		],
-		"files":[
-			"Caisse_bastille.png",
-			"Journal_du_22_janvier.png",
-			"Mamie_devant_bastille.png",
-			"Testament_copie.png"
+			}
 		]
 	}
 };
@@ -115,8 +115,8 @@ seqMainHint[3] = "swisstopo-screen.png" ;
 their img need to be placed in their video folder, username is their displayed name
 */
 var normalContacts = [] ;
-normalContacts[0] = {"vid" : "Denise", "vod_folder" : "", "username" : "Denise (guide)", "canal" : "video", "avatar" : "denise_avatar.jpg"} ;
-normalContacts[1] = {"vid" : "Nathalie", "vod_folder" : "", "username" : "Nathalie (guide)", "canal" : "video", "avatar" : "nata_avatar.jpg"} ;
+normalContacts[0] = {"vid" : "Commissaire", "vod_folder" : "", "Renée Froncet" : "Denise (guide)", "canal" : "video", "avatar" : "Commissaire_avatar.png"} ;
+normalContacts[1] = {"vid" : "Journaliste", "vod_folder" : "", "Amandine Financier" : "Nathalie (guide)", "canal" : "video", "avatar" : "Journaliste_avatar.png"} ;
 
 /*second part of the list, contact that can help the player*/
 var helperContacts = [] ;
@@ -132,11 +132,11 @@ var missingContact = {"vid" : "missing", "vod_folder" : "","username" : "Nathali
 
 /*Lou only send text message, they are stored here*/
 var tips = {} ;
-tips['Albert'] = [] ;
-tips['Albert'][0] = "Je peux pas répondre à votre appel. Mais je peux vous répondre par écrit. Donc vous cherchez le surnom d'un guide ? Je crois que les contacts sont des guides justement, essayez peut-être de les appeler." ;
-tips['Albert'][1] = "" ;
-tips['Albert'][2] = "" ;
-tips['Albert'][3] = "Ah zut, un dossier verouillé sans infos dans scan mémo ? Y'a forcément un truc mnémotechnique facile à retenir ou retrouver. Les guides en disent quoi ?" ;
+tips['Commissaire'] = [] ;
+tips['Commissaire'][0] = "Je peux pas répondre à votre appel. Mais je peux vous répondre par écrit. Donc vous cherchez le surnom de Pierre ? Il se fait appeler le "roi". Mais ça n'est pas la bonne orthographe." ;
+tips['Commissaire'][1] = "" ;
+tips['Commissaire'][2] = "" ;
+tips['Commissaire'][3] = "Ah zut, un dossier verouillé sans infos dans scan mémo ? Y'a forcément un truc mnémotechnique facile à retenir ou retrouver. Les guides en disent quoi ?" ;
 
 
 /*text for the instruction / solution windows*/
@@ -147,6 +147,6 @@ instructionText.password = "Vous devez trouver et entrer le mot de passe d'un de
 
 /*please note the %s into the text that allow to automatically replace them with the right content according to which sequence the player is in*/
 var solutionText = {} ;
-solutionText.winState = "Si Sabine a été secourue, le jeu est fini bravo." ;
+solutionText.winState = "Si la vérité sur le testament a été rétablie, le jeu est fini bravo." ;
 solutionText.lackMainHint = "Vous devez ouvrir le fichier <b>%s</b><br/>" ;
 solutionText.password = "Vous devez déverouiller le dossier <b>%s1</b><br/>avec le mot de passe : <b>%s2</b><br/>" ;
