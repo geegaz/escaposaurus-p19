@@ -40,7 +40,7 @@ var udiskData =
 			"Caisse_bastille.png",
 			"Journal_du_22_janvier.png",
 			"Mamie_devant_bastille.png",
-			"Testament_copie.png"
+			"Testament_copie.jpg"
 		],
 		"folders":[
 			{
@@ -50,7 +50,8 @@ var udiskData =
 				"files":[
 					"IMG_52164809.png", 
 					"Recette_creme_anglaise.png", 
-					"Recette_ile_flottante.png"
+					"Recette_ile_flottante.png",
+					"Recette_caramel.png"
 				]
 			},
 			{
@@ -66,6 +67,9 @@ var udiskData =
 							"Testament_original.png",
 						]
 					}
+				],
+				"files":[
+					"clef_de_dechiffrement.png"
 				]
 			}
 		]
@@ -94,33 +98,31 @@ titleData.callTitle = "APPEL EN COURS..." ;
 var promptDefault = "Rien à demander, ne pas les déranger." ;
 var prompt = [] ;
 prompt[0] = "Prendre contact" ;
-prompt[1] = "" ;
+prompt[1] = "Prendre contact" ;
 prompt[2] = "" ;
-prompt[3] = "Envoyer la carte" ;
-prompt[4] = "Appeler Nathalie pour savoir où en sont les secours." ;
+prompt[3] = "Appeler la commissaire pour lui montrer le testament" ;
 
 /*when the sequence number reach this, the player win, the missing contact is added and the player can call them*/
-var sequenceWin = 4 ;
+var sequenceWin = 3;
 
 /*before being able to call the contacts, the player has to open the main clue of the sequence as indicated in this array*/
 /*if you put in the string "noHint", player will be able to immediatly call the contact at the beginning of the sequence*/
 /*if you put "none" or anything that is not an existing filename, the player will NOT be able to call the contacts during this sequence*/
 var seqMainHint = [] ;
-seqMainHint[0] = "scan_memo.png" ;
-seqMainHint[1] = "aucun" ; /*if you put anything that is not an existing filename of the udisk, the player will never be able to call any contacts or get helps during this sequence*/
-seqMainHint[2] = "aucun" ;
-seqMainHint[3] = "swisstopo-screen.png" ;
+seqMainHint[0] = "Journal_du_22_janvier.png" ;
+seqMainHint[1] = "Recette_creme_anglaise.png" ; /*if you put anything that is not an existing filename of the udisk, the player will never be able to call any contacts or get helps during this sequence*/
+seqMainHint[2] = "noHint" ;
+seqMainHint[3] = "none" ;
 
 /*contact list, vid is the name of their folder in the videoContact folder, then the game autoload the video named seq%number of the current sequence%, e.g. seq0.MP4 for the first sequence (numbered 0 because computer science habits)
 their img need to be placed in their video folder, username is their displayed name
 */
 var normalContacts = [] ;
-normalContacts[0] = {"vid" : "Commissaire", "vod_folder" : "", "Renée Froncet" : "Denise (guide)", "canal" : "video", "avatar" : "Commissaire_avatar.png"} ;
-normalContacts[1] = {"vid" : "Journaliste", "vod_folder" : "", "Amandine Financier" : "Nathalie (guide)", "canal" : "video", "avatar" : "Journaliste_avatar.png"} ;
+normalContacts[0] = {"vid" : "Commissaire", "vod_folder" : "", "username" : "Renée Froncet (Commissaire)", "canal" : "video", "avatar" : "Commissaire_avatar.png"} ;
+normalContacts[1] = {"vid" : "Journaliste", "vod_folder" : "", "username" : "Amandine Financier (Journaliste)", "canal" : "video", "avatar" : "Journaliste_avatar.png"} ;
 
 /*second part of the list, contact that can help the player*/
 var helperContacts = [] ;
-helperContacts[0] = {"vid" : "Albert", "vod_folder" : "", "username" : "Albert (pour avoir un indice)", "canal" : "txt", "avatar" : "albert.png", "bigAvatar" : "albertbig.png"} ;
 /*helperContacts[1] = {"vid" : "Lou", "username" : "Lou (pour avoir un deuxième indice) - par message", "canal" : "txt", "avatar" : "Lou_opt.jpg", "bigAvatar" : "avatarHelper2Big.gif"} ;*/
 
 
@@ -128,16 +130,17 @@ helperContacts[0] = {"vid" : "Albert", "vod_folder" : "", "username" : "Albert (
 finalStepAdded = "Informations sur le testament original transmises." ;
 
 /*the last call, it can be the person we find in the end or anyone else we call to end the quest, allows the game to know it is the final contact that is called and to proceed with the ending*/
-var missingContact = {"vid" : "missing", "vod_folder" : "","username" : "Nathalie",  "canal" : "video", "avatar" : "nata_avatar.jpg"} ;
+var missingContact = {"vid" : "missing", "vod_folder" : "","username" : "Renée Froncet (Commissaire)",  "canal" : "video", "avatar" : "Commissaire_avatar.png"} ;
 
 /*Lou only send text message, they are stored here*/
 var tips = {} ;
+/*
 tips['Commissaire'] = [] ;
-tips['Commissaire'][0] = "Je peux pas répondre à votre appel. Mais je peux vous répondre par écrit. Donc vous cherchez le surnom de Pierre ? Il se fait appeler le "roi". Mais ça n'est pas la bonne orthographe." ;
+tips['Commissaire'][0] = "Je peux pas répondre à votre appel. Mais je peux vous répondre par écrit. Donc vous cherchez le surnom de Pierre ? Il se fait appeler le \"roi\". Mais ça n'est pas la bonne orthographe." ;
 tips['Commissaire'][1] = "" ;
 tips['Commissaire'][2] = "" ;
 tips['Commissaire'][3] = "Ah zut, un dossier verouillé sans infos dans scan mémo ? Y'a forcément un truc mnémotechnique facile à retenir ou retrouver. Les guides en disent quoi ?" ;
-
+*/
 
 /*text for the instruction / solution windows*/
 var instructionText = {} ;
