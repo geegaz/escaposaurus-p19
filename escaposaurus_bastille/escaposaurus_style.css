@@ -44,9 +44,9 @@ video{max-width: 960px;}
 	height:100%;
 	border:1px solid #1022CC;
 	text-align: center;
-	position:relative;
+	/* position:relative; */
 	
-	background: url(img/background.jpg);
+	background: url(img/background.png);
 	background-position: center;
 	background-color:#1022CC;
 	background-repeat: no-repeat;

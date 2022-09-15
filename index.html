@@ -58,20 +58,20 @@
 </head>
 <body>
 	<div class="hidden">
-			<script type="text/javascript">
-				function preload(files, list) {
-					for (i = 0; i < files.length; i++) {
-						var vidPreload = new Preload();
-						vidPreload.src = files[i];
-						if(typeof list !== "undefined"){
-							list[i] = img;
-						}
+		<script type="text/javascript">
+			function preload(files, list) {
+				for (i = 0; i < files.length; i++) {
+					var vidPreload = new Preload();
+					vidPreload.src = files[i];
+					if(typeof list !== "undefined"){
+						list[i] = img;
 					}
 				}
+			}
 
-				preload([]);
-			</script>
-		</div>
+			preload([]);
+		</script>
+	</div>
 	<div id="main-container">
 
 		<div id="os-name"></div>
