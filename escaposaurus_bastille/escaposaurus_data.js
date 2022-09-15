@@ -45,7 +45,7 @@ var udiskData =
 		"folders":[
 			{
 				"foldername":"Cuisine_Recettes",
-				"password":"roy",
+				"password":"le roy",
 				"sequence":0,
 				"files":[
 					"Emission de radio.mp4",

@@ -25,7 +25,7 @@
 /*by default there is no margin or padding anywhere*/
 *{ margin: 0px; padding: 0px; }
 a{color:#1022CC;}
-body{font-family: W95fa;}
+body{font-family: 'Times New Roman', Times, serif;}
 
 /*on veut la lightbox devant*/
 .lightbox-container {
@@ -39,7 +39,7 @@ video{max-width: 960px;}
 /*main div container*/
 #main-container{
 	max-width: 1300px;
-	max-height:800px;
+	max-height: 800px;
 	margin: auto;
 	height:100%;
 	border:1px solid #1022CC;
@@ -82,7 +82,6 @@ video{max-width: 960px;}
 	font-weight: bold;
 	padding:5px;
 	background-color:#1022CC;
-	font-family: W95fa;
 }
 
 #main-game-div{
@@ -99,7 +98,6 @@ video{max-width: 960px;}
 }
 
 .app-title-span{
-	font-family: W95fa ;
 	font-size:28px;
 	font-weight: bold;
 }
@@ -195,7 +193,6 @@ video{max-width: 960px;}
 	top:10%;
 	border:1px solid white;
 	background-color:#000;
-	width:1000px;
 	text-align: center;
 }
 
@@ -215,6 +212,11 @@ video{max-width: 960px;}
 	border:1px solid white;
 	background-color:#000;
 	width:200px;
+}
+
+#callVideo-content video {
+	max-width: 1000px;
+	max-height: 500px;
 }
 
 #solution-window,
@@ -254,7 +256,6 @@ video{max-width: 960px;}
 	border: none;
 	padding:3px;
 	margin:3px;
-	font-family: W95fa ;
 	font-size:14px;
 	font-weight:bold;
 }
@@ -305,7 +306,6 @@ video{max-width: 960px;}
 	border:none;
 	margin-right:5px;
 	padding:3px;
-	font-family: W95fa ;
 	font-size:16px;
 	font-weight:bold;
 }
@@ -344,7 +344,7 @@ video{max-width: 960px;}
 /*class that deals with the udrive content, tread carefully, it is working ok but very capricious*/
 ul{
     margin: 0px 0px 0px 20px; 
-    list-style: none; line-height: 2em; font-family: W95fa;
+    list-style: none; line-height: 2em;
 }
 
 .arbo, .folder{
@@ -378,7 +378,7 @@ ul{
 }
 
 .protected-name{
-	background: url("img/iconPassword.png") left center no-repeat;
+	background: url("img/iconPadlock.png") left center no-repeat;
 	content: '';
 	display:inline-block;
 	padding-left:20px;
