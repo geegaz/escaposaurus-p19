@@ -100,7 +100,7 @@ var promptDefault = "Rien à demander, ne pas les déranger." ;
 var prompt = [] ;
 prompt[0] = "Prendre contact" ;
 prompt[1] = "Prendre contact" ;
-prompt[2] = "" ;
+prompt[2] = "Prendre contact" ;
 prompt[3] = "Appeler la commissaire pour lui montrer le testament" ;
 
 /*when the sequence number reach this, the player win, the missing contact is added and the player can call them*/
@@ -145,12 +145,12 @@ tips['Commissaire'][3] = "Ah zut, un dossier verouillé sans infos dans scan mé
 
 /*text for the instruction / solution windows*/
 var instructionText = {} ;
-instructionText.winState = "Vous avez retrouvé l'id GPS et vous pouvez appeler les secours du secteur." ;
+instructionText.winState = "Vous avez découvert le testament original, faites part de votre trouvaille à la commissaire." ;
 instructionText.lackMainHint = "" ;
 instructionText.password = "Vous devez trouver et entrer le mot de passe d'un des dossiers de la boite de droite. Vous pouvez trouver le mot de passe en appelant les contacts de la boite de gauche.<br/>Pour entrer un mot de passe, cliquez sur le nom d'un dossier et une fenêtre s'affichera pour que vous puissiez donner le mot de passe." ;
 
 /*please note the %s into the text that allow to automatically replace them with the right content according to which sequence the player is in*/
 var solutionText = {} ;
-solutionText.winState = "Si la vérité sur le testament a été rétablie, le jeu est fini bravo." ;
+solutionText.winState = "Si la vérité sur le testament a été rétablie, le jeu est fini. Bravo !" ;
 solutionText.lackMainHint = "Vous devez ouvrir le fichier <b>%s</b><br/>" ;
 solutionText.password = "Vous devez déverouiller le dossier <b>%s1</b><br/>avec le mot de passe : <b>%s2</b><br/>" ;

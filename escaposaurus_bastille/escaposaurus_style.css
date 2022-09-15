@@ -158,7 +158,8 @@ video{max-width: 960px;}
 /* udisk app*/
 #folderApp{
 	width:450px;
-	height: 650px;
+	height: auto;
+	max-height: 650px;
 	overflow: auto;
 	padding:0 0 0 0;
 	margin:50 0 0 150;
