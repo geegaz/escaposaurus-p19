@@ -78,13 +78,13 @@ var udiskData =
 	}
 };
 
-var gameTitle = "Affaire Bastille" ;
+var gameTitle = "<b>Affaire Bastille</b>" ;
 var gameDescriptionHome = "\"La Bastille\" est un restaurant extrêmement réputé de Saint-Maclou-les-Mottes. <br>Après la mort de sa gérante, c'est Pierre Pallay, son petit-fils qui a repris le flambeau. <br>Malheureusement, les affaire ne vont pas aussi bien qu'elles le paraissent..." ;
 var gameMissionCall = "Voici la vidéo que la commissaire Renée Froncet a envoyé à votre bureau d'informaticien spécialisé en décryptage de données" ;
 var gameMissionAccept = "&raquo;&raquo; Accepter la mission et charger le disque dur dans le serveur virtuel (JOUER) &laquo;&laquo;" ;
 
-var gameCredit = "Un jeu conçu et réalisé par : <br/>Solenn, Noé, Tanguy, Axelle, William, Louise" ;
-var gameThanks = "Crédits image : "+ 
+var gameCredit = "<b>Un jeu conçu et réalisé par :</b> <br/>Solenn, Noé, Tanguy, Axelle, William, Louise" ;
+var gameThanks = "<b>Crédits image :</b> "+ 
 "<br/> PXHere CC0 Public Domain "+
 "<br>Pixabay "+
 "<br>Image Chef Hat  Erik Johnson (CC BY-NC-SA 2.0) "+
@@ -96,7 +96,8 @@ var gameThanks = "Crédits image : "+
 "<br>Image par Diego Fabian Parra Pabon de Pixabay "+
 "<br>Image par raoul corciulo de Pixabay "+
 "<br>Police W95FA par fontsarena de Dafont "+
-"<br>One or more textures bundled with this project have been created with images from Textures.com. These images may not be redistributed by default. Please visit www.textures.com for more information " ;
+"<br>One or more textures bundled with this project have been created with images from Textures.com. These images may not be redistributed by default. Please visit www.textures.com for more information "+
+"<br>Image Decorative Arts Classic Ornament Euclidean Vector Design par Hannah Hil(CC BY-NC 4.0) " ;
 
 var OSName = "Special InformaticienOS 3.11- diskloaded: Affaires_Bastille" ;
 var explorerName = "USB DISK EXPLORER" ;
@@ -132,11 +133,11 @@ seqMainHint[3] = "none" ;
 their img need to be placed in their video folder, username is their displayed name
 */
 var normalContacts = [] ;
-normalContacts[0] = {"vid" : "Commissaire", "vod_folder" : "", "username" : "Renée Froncet (Commissaire)", "canal" : "video", "avatar" : "Commissaire_avatar.png"} ;
-normalContacts[1] = {"vid" : "Journaliste", "vod_folder" : "", "username" : "Amandine Financier (Journaliste)", "canal" : "video", "avatar" : "Journaliste_avatar.png"} ;
+normalContacts[0] = {"vid" : "Journaliste", "vod_folder" : "", "username" : "Amandine Financier (Journaliste)", "canal" : "video", "avatar" : "Journaliste_avatar.png"} ;
 
 /*second part of the list, contact that can help the player*/
 var helperContacts = [] ;
+helperContacts[0] = {"vid" : "Commissaire", "vod_folder" : "", "username" : "Renée Froncet (Commissaire)", "canal" : "video", "avatar" : "Commissaire_avatar.png"} ;
 /*helperContacts[1] = {"vid" : "Lou", "username" : "Lou (pour avoir un deuxième indice) - par message", "canal" : "txt", "avatar" : "Lou_opt.jpg", "bigAvatar" : "avatarHelper2Big.gif"} ;*/
 
 

@@ -38,11 +38,11 @@ video{max-width: 960px;}
 /*size of the countainer defined to fit most used screen resolution*/
 /*main div container*/
 #main-container{
-	max-width: 1300px;
-	max-height: 800px;
+	/* max-width: 1300px;
+	max-height: 800px; */
 	margin: auto;
 	height:100%;
-	border:1px solid #1022CC;
+	width: 100%;
 	text-align: center;
 	/* position:relative; */
 	
@@ -55,7 +55,7 @@ video{max-width: 960px;}
 
 #main-container-index{
 	max-width: 1300px;
-	max-height:800px;
+	max-height: 800px;
 	margin: auto;
 	height:100%;
 	border:1px solid #1022CC;
@@ -231,8 +231,8 @@ video{max-width: 960px;}
 }
 
 #credit-window{
-	top:20%;
-	width:400px;
+	top:10%;
+	width:600px;
 }
 
 /*we override part of the lightbox style*/
