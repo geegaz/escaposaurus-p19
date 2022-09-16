@@ -557,7 +557,6 @@ function changingSequence(){
 			unlockContacts() ;
 		}
 	}
-
 }
 
 function win(){
