@@ -78,7 +78,7 @@ var udiskData =
 	}
 };
 
-var gameTitle = "<b>Affaire Bastille</b>" ;
+var gameTitle = "Affaire Bastille" ;
 var gameDescriptionHome = "\"La Bastille\" est un restaurant extrêmement réputé de Saint-Maclou-les-Mottes. <br>Après la mort de sa gérante, c'est Pierre Pallay, son petit-fils qui a repris le flambeau. <br>Malheureusement, les affaire ne vont pas aussi bien qu'elles le paraissent..." ;
 var gameMissionCall = "Voici la vidéo que la commissaire Renée Froncet a envoyé à votre bureau d'informaticien spécialisé en décryptage de données" ;
 var gameMissionAccept = "&raquo;&raquo; Accepter la mission et charger le disque dur dans le serveur virtuel (JOUER) &laquo;&laquo;" ;
@@ -86,18 +86,18 @@ var gameMissionAccept = "&raquo;&raquo; Accepter la mission et charger le disque
 var gameCredit = "<b>Un jeu conçu et réalisé par :</b> <br/>Solenn, Noé, Tanguy, Axelle, William, Louise" ;
 var gameThanks = "<b>Crédits image :</b> "+ 
 "<br/> PXHere CC0 Public Domain "+
-"<br>Pixabay "+
-"<br>Image Chef Hat  Erik Johnson (CC BY-NC-SA 2.0) "+
-"<br>Image Fabrice Desvignes en 2015,Jennifer Lescouët (CC-BY-SA 4.0) "+
-"<br>Image Un_trombone_sur_une_table_02 par Fawaz.tairou (CC-BY-SA 4.0) "+
-"<br>Image Ujuvad saarekesed par Juhan Harm (CC-BY 2.0) "+
-"<br>Image par  Mabel Amber, who will one day de Pixabay "+
-"<br>Image par Volker Glätsch de Pixabay "+
-"<br>Image par Diego Fabian Parra Pabon de Pixabay "+
-"<br>Image par raoul corciulo de Pixabay "+
-"<br>Police W95FA par fontsarena de Dafont "+
-"<br>One or more textures bundled with this project have been created with images from Textures.com. These images may not be redistributed by default. Please visit www.textures.com for more information "+
-"<br>Image Decorative Arts Classic Ornament Euclidean Vector Design par Hannah Hil(CC BY-NC 4.0) " ;
+"<br/>Pixabay "+
+"<br/>Image Chef Hat  Erik Johnson (CC BY-NC-SA 2.0) "+
+"<br/>Image Fabrice Desvignes en 2015,Jennifer Lescouët (CC-BY-SA 4.0) "+
+"<br/>Image Un_trombone_sur_une_table_02 par Fawaz.tairou (CC-BY-SA 4.0) "+
+"<br/>Image Ujuvad saarekesed par Juhan Harm (CC-BY 2.0) "+
+"<br/>Image par  Mabel Amber, who will one day de Pixabay "+
+"<br/>Image par Volker Glätsch de Pixabay "+
+"<br/>Image par Diego Fabian Parra Pabon de Pixabay "+
+"<br/>Image par raoul corciulo de Pixabay "+
+"<br/>Police W95FA par fontsarena de Dafont "+
+"<br/>One or more textures bundled with this project have been created with images from Textures.com. These images may not be redistributed by default. Please visit www.textures.com for more information "+
+"<br/>Image Decorative Arts Classic Ornament Euclidean Vector Design par Hannah Hil(CC BY-NC 4.0) " ;
 
 var OSName = "Special InformaticienOS 3.11- diskloaded: Affaires_Bastille" ;
 var explorerName = "USB DISK EXPLORER" ;
@@ -127,19 +127,19 @@ var seqMainHint = [] ;
 seqMainHint[0] = "Journal_du_22_janvier.png" ;
 seqMainHint[1] = "Recette_creme_anglaise.png" ; /*if you put anything that is not an existing filename of the udisk, the player will never be able to call any contacts or get helps during this sequence*/
 seqMainHint[2] = "noHint" ;
-seqMainHint[3] = "none" ;
+seqMainHint[3] = "noHint" ;
 
 /*contact list, vid is the name of their folder in the videoContact folder, then the game autoload the video named seq%number of the current sequence%, e.g. seq0.MP4 for the first sequence (numbered 0 because computer science habits)
 their img need to be placed in their video folder, username is their displayed name
 */
 var normalContacts = [] ;
 normalContacts[0] = {"vid" : "Journaliste", "vod_folder" : "", "username" : "Amandine Financier (Journaliste)", "canal" : "video", "avatar" : "Journaliste_avatar.png"} ;
+normalContacts[1] = {"vid" : "Spam", "vod_folder" : "", "username" : "Spam", "canal" : "txt", "avatar" : "Spam_avatar.png", "bigAvatar": "Spam_avatar.png"} ;
 
 /*second part of the list, contact that can help the player*/
 var helperContacts = [] ;
 helperContacts[0] = {"vid" : "Commissaire", "vod_folder" : "", "username" : "Renée Froncet (Commissaire)", "canal" : "video", "avatar" : "Commissaire_avatar.png"} ;
 /*helperContacts[1] = {"vid" : "Lou", "username" : "Lou (pour avoir un deuxième indice) - par message", "canal" : "txt", "avatar" : "Lou_opt.jpg", "bigAvatar" : "avatarHelper2Big.gif"} ;*/
-
 
 /*ce qui apparait quand on trouve le dernier élément du disque dur*/
 finalStepAdded = "Informations sur le testament original transmises." ;
@@ -149,6 +149,17 @@ var missingContact = {"vid" : "missing", "vod_folder" : "","username" : "Renée 
 
 /*Lou only send text message, they are stored here*/
 var tips = {} ;
+tips['Spam'] = [];
+tips['Spam'][0] = "<b>Expéditeur :</b> Thierry Missoux (thierrym@bienmanger.net)"+
+"<br/><b>Sujet :</b> demande d'interview "+
+"<br/><br/>Bonjour, je suis Thierry Missoux, journaliste pour Bien Manger magazine.</br> Seriez-vous disponible pour une interview au sujet de Pierre Pallay ?";
+tips['Spam'][1] = "<b>Expéditeur :</b> Securisur (notascam@ymail.com)"+
+"<br/><b>Sujet :</b> VOTRE ORDINATEUR RISQUE D'ÊTRE INFECTE"+
+"<br/><br/><b>/!\\ ALERTE SECURITE /!\\</b><br/><br/> VOTRE ANTI-VIRUS N'EST PLUS À JOUR DEPUIS LE 01/01/1996. VEUILLEZ CLIQUER SUR CE LIEN POUR LE METTRE À JOUR :<br/> www.cesitenestpasdutoutfrauduleux.com";
+tips['Spam'][2] = "<b>Expéditeur :</b> Magasins Normands (newsletter@magasinsnormands.com)"+
+"<br/><b>Sujet :</b> Découvrez nos nouveaux produits !"+
+"<br/><br/>Les magasins NORMAND vous invitent a tester leurs nouveaux plats surgelés signés Henriette Pallay !";
+
 /*
 tips['Commissaire'] = [] ;
 tips['Commissaire'][0] = "Je peux pas répondre à votre appel. Mais je peux vous répondre par écrit. Donc vous cherchez le surnom de Pierre ? Il se fait appeler le \"roi\". Mais ça n'est pas la bonne orthographe." ;

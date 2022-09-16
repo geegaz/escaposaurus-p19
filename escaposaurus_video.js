@@ -567,7 +567,10 @@ function win(){
 	while (nc.firstChild) {
 		nc.removeChild(nc.lastChild);
 	}
-	
+
+	var hch = document.getElementById("callApp-help")
+	hch.classList.add("hidden");
+
 	var hc = document.getElementById("help-contact") ;
 	while (hc.firstChild) {
 		hc.removeChild(hc.lastChild);
@@ -578,6 +581,7 @@ function closeNewContact(d){
 	closeIt(d) ;
 	var nc = document.getElementById("normal-contact") ;
 	createContact(missingContact, nc) ;
+	unlockContacts()
 }
 
 function closeAppelEntrant(d){

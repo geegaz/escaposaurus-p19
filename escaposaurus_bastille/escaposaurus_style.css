@@ -213,6 +213,7 @@ video{max-width: 960px;}
 	border:1px solid white;
 	background-color:#000;
 	min-width:350px;
+	max-width: 800px;
 }
 
 #callVideo-content video {
@@ -230,9 +231,9 @@ video{max-width: 960px;}
 	width:400px;
 }
 
-#credit-window{
-	top:10%;
-	width:600px;
+#caller2IMG{
+	max-width: 150px;
+	max-height: 150px;
 }
 
 /*we override part of the lightbox style*/
