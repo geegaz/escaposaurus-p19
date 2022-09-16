@@ -70,7 +70,8 @@ var udiskData =
 					}
 				],
 				"files":[
-					"clef_de_dechiffrement.png"
+					"clef_de_dechiffrement.png",
+					"message_francoise.png"
 				]
 			}
 		]
@@ -78,12 +79,24 @@ var udiskData =
 };
 
 var gameTitle = "Affaire Bastille" ;
-var gameDescriptionHome = "Ceci est une courte aventure d'exemple pour montrer ce que le framework Escaposaurus permet facilement de réaliser.<br/>Le code source est téléchargeable sur <a href='https://github.com/RedNaK/escaposaurus' target='_blank'>GitHub</a>" ;
+var gameDescriptionHome = "\"La Bastille\" est un restaurant extrêmement réputé de Saint-Maclou-les-Mottes. <br>Après la mort de sa gérante, c'est Pierre Pallay, son petit-fils qui a repris le flambeau. <br>Malheureusement, les affaire ne vont pas aussi bien qu'elles le paraissent..." ;
 var gameMissionCall = "Voici la vidéo que la commissaire Renée Froncet a envoyé à votre bureau d'informaticien spécialisé en décryptage de données" ;
 var gameMissionAccept = "&raquo;&raquo; Accepter la mission et charger le disque dur dans le serveur virtuel (JOUER) &laquo;&laquo;" ;
 
 var gameCredit = "Un jeu conçu et réalisé par : <br/>Solenn, Noé, Tanguy, Axelle, William, Louise" ;
-var gameThanks = "Remerciements : <br/> ;)" ;
+var gameThanks = "Crédits image : "+ 
+"<br/> PXHere CC0 Public Domain "+
+"<br>Pixabay "+
+"<br>Image Chef Hat  Erik Johnson (CC BY-NC-SA 2.0) "+
+"<br>Image Fabrice Desvignes en 2015,Jennifer Lescouët (CC-BY-SA 4.0) "+
+"<br>Image Un_trombone_sur_une_table_02 par Fawaz.tairou (CC-BY-SA 4.0) "+
+"<br>Image Ujuvad saarekesed par Juhan Harm (CC-BY 2.0) "+
+"<br>Image par  Mabel Amber, who will one day de Pixabay "+
+"<br>Image par Volker Glätsch de Pixabay "+
+"<br>Image par Diego Fabian Parra Pabon de Pixabay "+
+"<br>Image par raoul corciulo de Pixabay "+
+"<br>Police W95FA par fontsarena de Dafont "+
+"<br>One or more textures bundled with this project have been created with images from Textures.com. These images may not be redistributed by default. Please visit www.textures.com for more information " ;
 
 var OSName = "Special InformaticienOS 3.11- diskloaded: Affaires_Bastille" ;
 var explorerName = "USB DISK EXPLORER" ;

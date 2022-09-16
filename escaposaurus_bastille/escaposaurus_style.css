@@ -212,7 +212,7 @@ video{max-width: 960px;}
 	top:35%;
 	border:1px solid white;
 	background-color:#000;
-	width:250px;
+	min-width:350px;
 }
 
 #callVideo-content video {
